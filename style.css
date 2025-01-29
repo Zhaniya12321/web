@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fef9ec;
+    font-family: 'Cormorant Medium';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    color: green;
+    transition: 0.5s;
+}
+
+header button {
+    font-size: 18px;
+    background-color: #DAE952;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #DAE952;
+    color: white;
+}
+
+header button:hover {
+    transform: scale(1.1);
+}
+
+.block1 {
+    display: flex;
+    align-items: center;
+    padding: 30px 60px;
+    gap: 50px;
+}
+
+.kazakh-dishes {
+    max-width: 1200px;
+    width: 50%;
+}
+
+.kazakh-dishes h1 {
+    font-size: 42px;
+}
+
+.kazakh-dishes p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.dish-image img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.kazakh-dishes button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #DAE952;
+    border: 1px solid #DAE952;
+    color: white;
+}
+
+.kazakh-dishes button:hover {
+    transform: scale(1.1);
+}
+
+.block2 {
+    text-align: center;
+}
+
+.block2 h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.block2 p {
+    font-size: 20px;
+}
+
+.dishes {
+    display: flex;
+    gap: 50px;
+}
+
+.dish-card {
+    margin-top: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    align-items: center; 
+    background-color: white;
+    border-radius: 20px;
+}
+
+.dish-card img {
+    height: 160px;
+    width: 200px;
+}
+
+.dish-card h3 {
+    font-size: 20px;
+}
+
+.dish-card p {
+    font-size: 18px;
+}
+
+.dish-card:hover {
+    transform: scale(1.1);
+}
+
+.block3 {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-image img {
+    max-width: 400px;
+}
+
+.welcome-text {
+    max-width: 1200px;
+    width: 45%;
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+}
+
+.welcome-text p {
+    font-size: 20px;
+}
+
+.welcome-text button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #DAE952;
+    border: 1px solid #DAE952;
+    color: white;
+}
+
+.welcome-text button:hover {
+    transform: scale(1.1);
+}
+
+.block4 {
+    text-align: center;
+}
+
+.block4 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.block4 {
+    text-align: center;
+}
+
+.block4 h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.block4 p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.block4 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.block4 form input {
+    width: 300px;
+    border-radius: 20px;
+    padding: 6px;
+}
+
+.block4 form button {
+    border-radius: 20px;
+    padding: 8px 20px;
+    background-color: #DAE952;
+    color: white;
+    border: 1px solid #DAE952;
+}
+
+.block4 form button:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #373737;
+    padding: 20px 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-links a:hover {
+    color: #DAE952;
+}
+
+.footer-logo img {
+    width: 80px; 
+}
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; 
+        margin-bottom: 30px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .kazakh-dishes {
+        padding: 0 20px;
+    }
+
+    .kazakh-dishes p {
+        font-size: 20px;
+    }
+
+    .dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .block3 {
+        flex-direction: column;
+    }
+
+    .welcome-text {
+        width: 100%;
+    }
+
+    .welcome-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .block3 {
+        flex-direction: column;
+    }
+
+    .welcome-text {
+        width: 100%;
+    }
+
+    .welcome-text h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
